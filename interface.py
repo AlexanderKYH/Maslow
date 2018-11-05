@@ -1,4 +1,4 @@
-import category, hierarchy
+import category, hierarchy, level
 
 def get_questions_all():
 
@@ -10,4 +10,15 @@ def get_questions_all():
 
     return questions_all
 
+def get_question_akut():
 
+    question_akut =[]
+    category_list = []
+
+    category_list.extend(level.get_level_category(1))
+    category_list.extend(level.get_level_category(2))
+
+    for x in category_list:
+        question_akut.extend(category.get_category_questions(x))
+
+    return question_akut

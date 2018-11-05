@@ -9,8 +9,9 @@ def main():
     #print(answer)
     #answer = hierarchy.get_hierarchy_categories()
     #print(answer)
-    answer = interface.get_questions_all()
-    print(answer)
-
+    #answer = interface.get_questions_all()
+    #print(answer)
+    #answer = interface.get_question_akut()
+    #print(answer)
 if __name__ == '__main__':
     main()
