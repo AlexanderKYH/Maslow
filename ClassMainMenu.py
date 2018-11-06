@@ -4,15 +4,17 @@ class MainMenu:
             "1": self.daily_test,
             "2": self.emergency_test,
             "3": self.history,
-            "4": self.quit
+            "4": self.appeal,
+            "5": self.quit
         }
     def display_menu(self):
         print("=" * 30)
         print("""
-                1. Dagligt test
-                2. Akut-test
+                1. Starta dagligt Test
+                2. Starta akut-test
                 3. Historik
-                4. Avsluta
+                4. Ändra uppmaningar
+                5. Avsluta programmet
                  """)
         print("=" * 30)
 
@@ -21,7 +23,7 @@ class MainMenu:
         #Visar menyn och frågar efter användarinput
         while True:
             self.display_menu()
-            choice = input("Välj ett alternativ [1-4]: ")
+            choice = input("Välj ett alternativ [1-5]: ")
             action = self.choices.get(choice)
             if action:
                 action()
@@ -38,6 +40,9 @@ class MainMenu:
 
     def history(self):
         print("Historik är inte färdigt ännu")
+
+    def appeal(self):
+        print("Ring Bosse")
 
     def quit(self):
         print("Avslutar programmet")
