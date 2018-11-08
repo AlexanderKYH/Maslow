@@ -1,15 +1,21 @@
-import question, category, level, hierarchy, interface
+from question import Question
+from category import Category
+from level import Level
+from hierarchy import Hierarchy
+from interface import Interface
 
 def main():
-    #answer = question.get_question("sex.txt", 3)
+    #answer = Question.get_question("sex.txt", 3)
     #print(answer)
-    #cat_list = category.get_category_questions("sex.txt")
+    #cat_list = Category.get_category_questions("sex.txt")
     #print(cat_list)
-    #answer = level.get_level_category(3)
+    #answer = Level.get_level_category(3)
     #print(answer)
-    #answer = hierarchy.get_hierarchy_categories()
+    #h = Hierarchy()
+    #answer = h.get_hierarchy_categories()
     #print(answer)
-    #answer = interface.get_questions_all()
+    #I = Interface()
+    #answer = I.get_questions_all()
     #print(answer)
     #answer = interface.get_question_akut()
     #print(answer)

@@ -1,24 +1,28 @@
-import category, hierarchy, level
+from hierarchy import Hierarchy
+from category import Category
+from level import Level
+class Interface:
 
-def get_questions_all():
+    def get_questions_all(self):
 
-    questions_all = []
-    category_list = hierarchy.get_hierarchy_categories()
+        h = Hierarchy()
+        questions_all = []
+        category_list = h.get_hierarchy_categories()
 
-    for x in category_list:
-        questions_all.extend(category.get_category_questions(x))
+        for x in category_list:
+            questions_all.extend(Category.get_category_questions(x))
 
-    return questions_all
+        return questions_all
 
-def get_question_akut():
+    def get_question_akut(self):
 
-    question_akut =[]
-    category_list = []
+        question_akut =[]
+        category_list = []
 
-    category_list.extend(level.get_level_category(1))
-    category_list.extend(level.get_level_category(2))
+        category_list.extend(Level.get_level_category(1))
+        category_list.extend(Level.get_level_category(2))
 
-    for x in category_list:
-        question_akut.extend(category.get_category_questions(x))
+        for x in category_list:
+            question_akut.extend(Category.get_category_questions(x))
 
-    return question_akut
+        return question_akut
