@@ -3,21 +3,31 @@ from category import Category
 from level import Level
 from hierarchy import Hierarchy
 from interface import Interface
+from diagnosis import Diagnosis
+
 
 def main():
-    #answer = Question.get_question("sex.txt", 3)
-    #print(answer)
-    #cat_list = Category.get_category_questions("sex.txt")
+    d = Diagnosis()
+    c = Category()
+    l = Level()
+    q = Question()
+
+    answer = q.get_question("sex.txt", 1)
+    print(answer)
+    #cat_list = c.get_category_questions("sex.txt")
     #print(cat_list)
-    #answer = Level.get_level_category(3)
+    #answer = l.get_level_category(3)
     #print(answer)
-    #h = Hierarchy()
+    h = Hierarchy()
     #answer = h.get_hierarchy_categories()
     #print(answer)
-    #I = Interface()
+    I = Interface()
     #answer = I.get_questions_all()
     #print(answer)
-    #answer = interface.get_question_akut()
+    #answer = I.get_question_akut()
     #print(answer)
+    #answer = d.setup_diagnosis()
+    #print(answer)
+
 if __name__ == '__main__':
     main()

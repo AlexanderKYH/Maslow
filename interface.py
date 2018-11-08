@@ -10,7 +10,7 @@ class Interface:
         category_list = h.get_hierarchy_categories()
 
         for x in category_list:
-            questions_all.extend(Category.get_category_questions(x))
+            questions_all.extend(Category.get_category_questions(self, x))
 
         return questions_all
 
@@ -19,10 +19,10 @@ class Interface:
         question_akut =[]
         category_list = []
 
-        category_list.extend(Level.get_level_category(1))
-        category_list.extend(Level.get_level_category(2))
+        category_list.extend(Level.get_level_category(self, 1))
+        category_list.extend(Level.get_level_category(self, 2))
 
         for x in category_list:
-            question_akut.extend(Category.get_category_questions(x))
+            question_akut.extend(Category.get_category_questions(self, x))
 
         return question_akut

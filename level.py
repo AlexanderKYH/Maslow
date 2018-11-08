@@ -1,6 +1,6 @@
 class Level:
 
-    def get_level_category(level_id: int):
+    def get_level_category(self, level_id: int):
         level = []
         categories = []
         #tier/level 1 contains the physiological needs categories

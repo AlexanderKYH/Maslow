@@ -7,7 +7,7 @@ class Hierarchy:
         category_list = []
 
         for r in range(5):
-            temp.extend(Level.get_level_category(r))
+            temp.extend(Level.get_level_category(self, r))
             category_list = [x for x in temp]
 
         return category_list
