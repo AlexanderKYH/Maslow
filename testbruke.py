@@ -4,13 +4,14 @@ from level import Level
 from hierarchy import Hierarchy
 from interface import Interface
 from diagnosis import Diagnosis
-
+from EmergencyFollowUp import Emergency_followup
 
 def main():
     d = Diagnosis()
     c = Category()
     l = Level()
     q = Question()
+    e = Emergency_followup()
 
     #answer = q.get_question("sex.txt", 1)
     #print(answer)
@@ -30,7 +31,10 @@ def main():
     #answer = d.read_diagnosis()
     #answer = d.write_diagnosis("this is question nr 3", "A diagnos")
     #answer = d.get_diagnosis("this is question nr 3")
-    #print(answer)
+    #answer = e.setup_followup()
+    #answer = e.change_followup("this is question nr 2", "this is a good answer")
+    answer = e.read_followup("this is question nr 2")
+    print(answer)
 
 if __name__ == '__main__':
     main()
