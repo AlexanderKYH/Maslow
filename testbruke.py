@@ -12,8 +12,8 @@ def main():
     l = Level()
     q = Question()
 
-    answer = q.get_question("sex.txt", 1)
-    print(answer)
+    #answer = q.get_question("sex.txt", 1)
+    #print(answer)
     #cat_list = c.get_category_questions("sex.txt")
     #print(cat_list)
     #answer = l.get_level_category(3)
@@ -27,6 +27,9 @@ def main():
     #answer = I.get_question_akut()
     #print(answer)
     #answer = d.setup_diagnosis()
+    #answer = d.read_diagnosis()
+    #answer = d.write_diagnosis("this is question nr 3", "A diagnos")
+    #answer = d.get_diagnosis("this is question nr 3")
     #print(answer)
 
 if __name__ == '__main__':
