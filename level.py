@@ -4,7 +4,7 @@ class Level:
         level = []
         categories = []
         #tier/level 1 contains the physiological needs categories
-        level.append(["food.txt", "water.txt", "air.txt", "sex.txt"])
+        level.append([ "air.txt", "food.txt", "water.txt","sex.txt"])
         #tier/level 2 contains the safety categories
         level.append(["safety.txt", "security.txt"])
         #tier/level 3 contains love/belonging categories

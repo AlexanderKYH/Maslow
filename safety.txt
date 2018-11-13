@@ -1,5 +1,6 @@
-Har du känt dig trygg idag?
-Har din hälsa varit bra idag?
-Har din arbetsdag varit bra?
-Känns din ekonomiska situation OK idag?
+safety
+Have you been feeling safe today?
+How have your general health been today?
+How has your workday been?
+Do you consider your economic situation as OK today?
 

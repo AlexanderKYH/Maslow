@@ -1,2 +1,3 @@
-Känner du att du blivit uppskattad idag?
-Har du känt dig kompetent idag?
+confidence
+Have you feelt appreciated today?
+Have you feelt competent today?

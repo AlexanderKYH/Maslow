@@ -1,2 +1,3 @@
-Hur upplever du att du har sovit inatt?
-Känner du dig pigg?
+sleep
+How have you been sleeping tonight?
+Do you feel energized?
