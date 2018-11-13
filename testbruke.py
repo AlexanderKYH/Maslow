@@ -27,7 +27,8 @@ def main():
     #answer = I.get_question_akut()
     #print(answer)
     #answer = d.setup_diagnosis()
-    #print(answer)
+    answer = d.read_diagnosis()
+    print(answer)
 
 if __name__ == '__main__':
     main()
