@@ -20,8 +20,13 @@ class Diagnosis:
         return setup_dict
 
 
-    def write_diagnosis(self):
-        pass
+    def write_diagnosis(self, question, diagnosis):
+        diagnosis_dic = eval(open("diagnosis_setup.txt").read())
+        with open("diagnosis_setup.txt", "w") as f:
+            diagnosis_dic.update({question: diagnosis})
+            f.write(str(diagnosis_dic))
 
-    def get_diagnosis(self):
-        pass
+    def get_diagnosis(self, question):
+        diagnosis_dict = eval(open("diagnosis_setup.txt").read())
+        diagnose = diagnosis_dict.get(question)
+        return diagnose
