@@ -1,5 +1,6 @@
-this is question nr 1
-this is question nr 2
-this is question nr 3
-this is question nr 4
-this is question nr 5
+safety
+Have you been feeling safe today?
+How have your general health been today?
+How has your workday been?
+Do you consider your economic situation as OK today?
+
