@@ -1,3 +1,4 @@
+
 class MainMenu:
     def __init__(self):
         self.choices = {
@@ -32,11 +33,13 @@ class MainMenu:
 
 # Funktionerna under skall ej vara med i denna klassen utan används just nu för att säkerställa att Menyn fungerar.
 
+
     def daily_test(self):
         print("Dagligt test är inte färdigt ännu")
 
     def emergency_test(self):
-        print("Akut-testet är inte färdigt ännu")
+        print("akut test ej klar")
+
 
     def history(self):
         print("Historik är inte färdigt ännu")
