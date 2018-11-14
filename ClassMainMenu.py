@@ -1,15 +1,15 @@
-
+from interface import Interface
 class MainMenu:
     def __init__(self):
         self.choices = {
-            "1": self.daily_test,
-            "2": self.emergency_test,
-            "3": self.history,
-            "4": self.appeal,
-            "5": self.quit
+            "1": self.run_daily_test,
+            "2": self.run_emergency_test,
+            "3": self.run_history,
+            "4": self.run_appeal,
+            "5": self.run_quit
         }
     def display_menu(self):
-        print("=" * 30)
+        print("=" * 60)
         print("""
                 1. Starta dagligt Test
                 2. Starta akut-test
@@ -17,7 +17,7 @@ class MainMenu:
                 4. Ändra uppmaningar
                 5. Avsluta programmet
                  """)
-        print("=" * 30)
+        print("=" * 60)
 
     def run(self):
 
@@ -34,20 +34,20 @@ class MainMenu:
 # Funktionerna under skall ej vara med i denna klassen utan används just nu för att säkerställa att Menyn fungerar.
 
 
-    def daily_test(self):
-        print("Dagligt test är inte färdigt ännu")
+    def run_daily_test(self):
+        Interface.interface_daily_questions(self)
 
-    def emergency_test(self):
-        print("akut test ej klar")
+    def run_emergency_test(self):
+        Interface.interface_questions_akut(self)
 
 
-    def history(self):
+    def run_history(self):
         print("Historik är inte färdigt ännu")
 
-    def appeal(self):
+    def run_appeal(self):
         print("Ring Bosse")
 
-    def quit(self):
+    def run_quit(self):
         print("Avslutar programmet")
         print("Hej då :)")
         quit()
