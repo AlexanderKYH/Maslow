@@ -31,10 +31,10 @@ def main():
     #answer = d.read_diagnosis()
     #answer = d.write_diagnosis("this is question nr 3", "A diagnos")
     #answer = d.get_diagnosis("this is question nr 3")
-    #answer = e.setup_followup()
+    answer = e.setup_followup()
     #answer = e.change_followup("How have your general health been today?", "Go for a run")
     #answer = e.read_followup("How have your general health been today?")
-    answer = e.new_followup()
+    #answer = e.new_followup()
     print(answer)
 
 if __name__ == '__main__':
