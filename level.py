@@ -2,7 +2,6 @@ class Level:
 
     def get_level_category(self, level_id: int):
         level = []
-        categories = []
         #tier/level 1 contains the physiological needs categories
         level.append([ "air.txt", "food.txt", "water.txt","sex.txt"])
         #tier/level 2 contains the safety categories

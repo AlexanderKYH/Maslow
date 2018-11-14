@@ -19,8 +19,8 @@ class Interface:
         question_akut =[]
         category_list = []
 
+        category_list.extend(Level.get_level_category(self, 0))
         category_list.extend(Level.get_level_category(self, 1))
-        category_list.extend(Level.get_level_category(self, 2))
 
         for x in category_list:
             question_akut.extend(Category.get_category_questions(self, x))
