@@ -1,10 +1,10 @@
-from interface import Interface
+import interface
 
-class Emergency_followup():
+class Emergency_followup:
 
     def setup_followup(self):
         setup_dict = {}
-        i = Interface()
+        i = interface.Interface()
         question_list = i.get_question_akut()
 
         for question in question_list:
@@ -26,7 +26,7 @@ class Emergency_followup():
         return answer
 
     def new_followup(self):
-        i = Interface()
+        i = interface.Interface()
         question_list = i.get_question_akut()
         setup_dict = eval(open("followup_setup.txt").read())
 

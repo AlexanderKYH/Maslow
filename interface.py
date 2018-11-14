@@ -1,6 +1,8 @@
 from hierarchy import Hierarchy
 from category import Category
 from level import Level
+from EmergencyFollowUp import Emergency_followup
+
 class Interface:
 
     def get_questions_all(self):
@@ -24,5 +26,30 @@ class Interface:
 
         for x in category_list:
             question_akut.extend(Category.get_category_questions(self, x))
-
         return question_akut
+
+    def interface_questions_akut(self):
+        questions = Interface.get_question_akut(self)
+
+        for x in questions:
+            temp = int(input(x))
+
+            if temp >= 7:
+                e = Emergency_followup()
+                print(Emergency_followup.read_followup(self, x))
+
+    def interface_daily_questions(self):
+        historik = []
+        questions = Interface.get_questions_all(self)
+
+        for x in questions:
+            historik.append(int(input(x)))
+
+        #skicka historik till historik klassen
+
+
+
+
+
+
+

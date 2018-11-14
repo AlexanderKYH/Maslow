@@ -1,3 +1,4 @@
+from category import Category
 class Level:
 
     def get_level_category(self, level_id: int):
@@ -16,3 +17,24 @@ class Level:
 
         return level[level_id]
 
+    def level_count(self):
+        category_list = []
+        count_list = []
+
+
+        for level_id in range(5):
+            temp = []
+            category_list.extend(Level.get_level_category(self, level_id))
+            for x in category_list:
+                    if x != '''''':
+                        temp.extend(Category.get_category_questions(self,x))
+
+            #category_list = [x for x in temp]
+            print(x)
+            i = len(temp)
+            with open("test.txt", "w") as f:
+                f.write(str(temp))
+            count_list.append(i)
+
+
+        return count_list

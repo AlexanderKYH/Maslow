@@ -1,0 +1,5 @@
+['Are you feeling hungry?',
+ 'Do you feel like you have been eating healthy food today?',
+ 'Have you hydrated enough today?', 'Have you been feeling safe today?',
+  'How have your general health been today?', 'How has your workday been?',
+  'Do you consider your economic situation as OK today?', ', ''', 'How would you rate your social encounter today?', 'Have you feelt socialy included?', 'Have you been getting along with family and friends today?', 'Have you feelt appreciated today?', 'Have you feelt competent today?']
