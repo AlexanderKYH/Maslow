@@ -1,3 +1,4 @@
+from category import Category
 class Level:
 
     def get_level_category(self, level_id: int):
@@ -16,3 +17,18 @@ class Level:
 
         return level[level_id]
 
+    def level_count(self):
+        category_list = []
+        count_list = []
+        temp = []
+
+        for level_id in range(5):
+            category_list.extend(Level.get_level_category(self, level_id))
+            #for x in category_list:
+                #temp.append(Category.get_category_questions(self,x))
+            category_list = [x for x in temp]
+            i = len(temp)
+            count_list.append(i)
+
+
+        return count_list
