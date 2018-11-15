@@ -1,5 +1,4 @@
-Have you been feeling safe today?
-How have your general health been today?
+Have you been feeling unsafe today?
+Is your general health bad today?
 How has your workday been?
 Do you consider your economic situation as OK today?
-

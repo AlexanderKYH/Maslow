@@ -9,29 +9,29 @@ class MainMenu:
             "5": self.run_quit
         }
     def display_menu(self):
-        print("=" * 60)
+        print("=" * 34)
         print("""
-                1. Starta dagligt Test
-                2. Starta akut-test
-                3. Historik
-                4. Ändra uppmaningar
-                5. Avsluta programmet
+        1. Daily Test
+        2. Emergency Test
+        3. History
+        4. Change Follow Up
+        5. Exit Program
                  """)
-        print("=" * 60)
+        print("=" * 34)
 
     def run(self):
 
         #Visar menyn och frågar efter användarinput
         while True:
             self.display_menu()
-            choice = input("Välj ett alternativ [1-5]: ")
+            choice = input("Make a decision: ")
             action = self.choices.get(choice)
             if action:
                 action()
             else:
                 print("{0} Felaktig inmatning".format(choice))
 
-# Funktionerna under skall ej vara med i denna klassen utan används just nu för att säkerställa att Menyn fungerar.
+
 
 
     def run_daily_test(self):
@@ -42,18 +42,19 @@ class MainMenu:
 
         
     def run_history(self):
-         # file-input.py
-        f = open('data.txt', 'r')
+        f = open("data.txt", "r")
         message = f.read()
         print(message)
         input("Press Enter to continue")
+
+
         
+
     def run_appeal(self):
-        print("Ring Bosse")
+        print("Please check your internet-connection")
 
     def run_quit(self):
-        print("Avslutar programmet")
-        print("Hej då :)")
+        print("Good bye")
         quit()
 
 
