@@ -31,7 +31,7 @@ class MainMenu:
             else:
                 print("{0} Felaktig inmatning".format(choice))
 
-# Funktionerna under skall ej vara med i denna klassen utan används just nu för att säkerställa att Menyn fungerar.
+
 
 
     def run_daily_test(self):
@@ -40,12 +40,15 @@ class MainMenu:
     def run_emergency_test(self):
         Interface.interface_questions_akut(self)
 
-
+        
     def run_history(self):
         f = open("data.txt", "r")
         message = f.read()
         print(message)
         input("Press Enter to continue")
+
+
+        
 
     def run_appeal(self):
         print("Please check your internet-connection")
